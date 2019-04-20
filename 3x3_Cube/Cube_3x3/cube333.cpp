@@ -18,7 +18,7 @@ void Cube333::initCube() {
   }
   for (uint8_t col = 0; col < 3; col++) {
     pinMode(cols[col], OUTPUT);
-    digitalWrite(cols[col], 1);
+    digitalWrite(cols[col], 0);
   }
   setBrightness(15);
   setEnabled(true);
@@ -154,7 +154,7 @@ void Cube333::updateCube() {
   row2 = row2 & 0b00000111;
 
   // Ebenen ausschalten
-  PORTB  = 0b00111000;
+  PORTB  = 0b00000000;
 
   if (!enabled) {
     return;
@@ -170,7 +170,7 @@ void Cube333::updateCube() {
 
   uint8_t mask = 0x01 << actLayer;
   mask = mask << 3;
-  mask = mask ^ 0b11111000;
+  //mask = mask ^ 0b11111000;
 
   uint8_t result = mask | row2;
 

@@ -93,7 +93,7 @@ void loop() {
   delay(500);
   xyzAccess();
   rotate();
-  /*
+/*
   */
 }
 
@@ -124,20 +124,30 @@ void testIt() {
 }
 
 void bright() {
+  dbgOutLn(F("clear"));
+  cube333.clearLEDs();
+  dbgOutLn(F("b0"));
   cube333.setBrightness(0);
+  dbgOutLn(F("all"));
   cube333.allLEDs();
   for (byte x = 0; x < 16; x++) {
+    dbgOut(F("b"));
+    dbgOutLn(x);
     cube333.setBrightness(x);
     delay(100);
   }
-  delay(500);
+  delay(1000);
+  dbgOutLn(F("all"));
   cube333.allLEDs();
   for (byte x = 0; x < 3; x++) {
+    dbgOutLn(F("dis"));
     cube333.setEnabled(false);
     delay(500);
+    dbgOutLn(F("en"));
     cube333.setEnabled(true);
     delay(500);
   }
+  dbgOutLn(F("clear"));
   cube333.clearLEDs();
 }
 
