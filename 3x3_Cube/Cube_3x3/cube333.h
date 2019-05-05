@@ -28,7 +28,7 @@ class Cube333 {
     // setzte/löscht alle LEDs einer Linie in Richtung y Achse beginnent mit der Start LED
     void setYLine(uint8_t startY, uint8_t value);
     // setzte/löscht alle LEDs einer Linie in Richtung z Achse beginnent mit der Start LED
-    void setZLine(uint8_t x, uint8_t value);
+    void setZLine(uint8_t startZ, uint8_t value);
     // setzt/löscht eine LED im Cubus mit den xyz Koordinaten (xyz = 0..2)
     void setLED(uint8_t x, uint8_t y, uint8_t z, uint8_t value);
     bool getLED(uint8_t x, uint8_t y, uint8_t z);

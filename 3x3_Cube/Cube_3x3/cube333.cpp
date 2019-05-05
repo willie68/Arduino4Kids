@@ -87,10 +87,10 @@ void Cube333::setYLine(uint8_t startY, uint8_t value) {
   }
 }
 
-void Cube333::setZLine(uint8_t x, uint8_t value) {
-  setLED(x, value);
-  setLED(x + 9, value);
-  setLED(x + 18, value);
+void Cube333::setZLine(uint8_t startZ, uint8_t value) {
+  setLED(startZ, value);
+  setLED(startZ + 9, value);
+  setLED(startZ + 18, value);
 }
 
 void Cube333::setLED(uint8_t x, uint8_t y, uint8_t z, uint8_t value) {
