@@ -1,0 +1,33 @@
+#######################################
+# Syntax Coloring Map RCReceiver
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+Cube333	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+initCube	KEYWORD2
+clearLEDs	KEYWORD2
+allLEDs	KEYWORD2
+setBrightness	KEYWORD2
+setEnabled	KEYWORD2
+getEnabled	KEYWORD2
+setXTile	KEYWORD2
+setYTile	KEYWORD2
+setZTile	KEYWORD2
+setXLine	KEYWORD2
+setYLine	KEYWORD2
+setZLine	KEYWORD2
+setLED	KEYWORD2
+getLED	KEYWORD2
+updateCube	KEYWORD2
+dbgOutLEDs	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
