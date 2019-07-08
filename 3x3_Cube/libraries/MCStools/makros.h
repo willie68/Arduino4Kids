@@ -35,3 +35,7 @@
 #ifndef ELEMENTS
 #define ELEMENTS(x)    (sizeof(x) / sizeof(x[0]))
 #endif
+
+#ifndef FILLARRAY
+#define FILLARRAY(a,n) a[0]=n, memcpy( ((char*)a)+sizeof(a[0]), a, sizeof(a)-sizeof(a[0]) );
+#endif
